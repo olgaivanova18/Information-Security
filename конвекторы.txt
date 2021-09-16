@@ -1,0 +1,10 @@
+
+pandoc.exe report.md -o report.docx
+pandoc.exe report.md -F pandoc-crossref --pdf-engine='lualatex' --number-section -o report.pdf
+
+pandoc.exe presentation.md -F pandoc-crossref  --pdf-engine='lualatex' --number-section -t beamer --slide-level=2 -o presentation.pdf
+
+mainfont: PT Serif
+romanfont: PT Serif
+sansfont: PT Serif
+monofont: PT Serif
